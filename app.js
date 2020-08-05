@@ -15,19 +15,15 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-//  console.log(req.body.email)
-//  console.log(req.body.password)
   const email = req.body.email
   const password = req.body.password
   const loginCheck = accountCheck(email, password)
-  // console.log(loginCheck)
+
   if(loginCheck.includes('帳號密碼錯誤')) {
     res.render('index', {loginCheck, email, password})
   }else{
     res.render('login', {loginCheck, email, password})
   }
-
-  // res.render('index', {loginCheck, email, password})
 })
 
 app.listen(port, () => {
