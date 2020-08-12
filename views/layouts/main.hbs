@@ -16,6 +16,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand" href="/">Account Login</a>
+    <form action="/logout" method="GET" style="display: inline;" onsubmit="return confirm('是否要登出！?')">
+      <button class="btn btn-danger" type="submit">登出</button>
+    </form>
   </nav>
 
   {{{ body }}}
