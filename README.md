@@ -25,7 +25,7 @@
   ``git clone https://github.com/hsiyu1121/account_login_cookies.git``
 * 切換至資料夾內
 
-  ``cd account_login_cookie``
+  ``cd account_login_cookies``
 * 安裝相關的套件
 
   ``npm install``
